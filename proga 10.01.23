@@ -1,0 +1,23 @@
+# for a in range(1, 500):
+#     flag = 0
+#     for x in range(1, 1000):
+#         if (((x % a !=0) <= (x% 6 == 0))<=(x % 4 == 0)) == 0:
+#             flag = 1
+#             break
+#     if flag == 0:
+#         print(a)
+#
+# for a in range(100, 0, -1):
+#     k = 0
+#     for x in range(1, 1000):
+#         if (a < 50) and ((x % a != 0) <= ((x % 10 == 0) <= (x % 12 != 0))):
+#             k += 1
+#     if k == 999:
+#         print(a)
+#         break
+#
+def f(x,a):
+    return (x % a ==0) and (a < 10) or (x%44 !=0) and (x % 99 !=0) and (a<10)
+for a in range (1, 1000):
+    if all(f(x, a) == 1 for x in range(1, 1000)):
+        print(a)
