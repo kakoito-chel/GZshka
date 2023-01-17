@@ -1,0 +1,66 @@
+# my_set = {5, 1, 2, 6, 3, 4, 3, 2}
+# my_set = [5, 1, 2, 6, 3, 4, 3, 2]
+
+# print(list(set(my_set)))
+
+
+# a = se
+
+# print(type(a))
+
+my_set = {5, 1, 2, 6, 3, 4, 3, 2}
+
+# my_set.add('Hello')
+# my_set.update([10,11], {1, 6, 8}, 123)
+
+# my_set.remove(1)
+# my_set.discard(5)
+# my_set.pop()
+
+my_set.clear()
+
+print(my_set)
+
+# # my_set = {5, 1, 2, 6, 3, 4, 3, 2}
+# # my_set = [5, 1, 2, 6, 3, 4, 3, 2]
+
+# # print(list(set(my_set)))
+
+
+# # a = se
+
+# # print(type(a))
+
+# my_set = {5, 1, 2, 6, 3, 4, 3, 2}
+
+# # my_set.add('Hello')
+# # my_set.update([10,11], {1, 6, 8}, 123)
+
+# # my_set.remove(1)
+# # my_set.discard(5)
+# # my_set.pop()
+
+# my_set.clear()
+
+# print(my_set)
+
+
+A = {1, 2, 3, 4, 5}
+B = {4, 5, 6, 7, 8}
+
+print('A', A)
+print('B', B)
+
+print('Объединение', A | B)
+# print(A.union(B))
+print('Общее', A & B)
+
+print('A-B', A-B)
+print('B-A',B-A)
+
+
+# > A.intersection(B)
+# {4, 5}
+
+# >>> B.intersection(A)
+# {4, 5}
