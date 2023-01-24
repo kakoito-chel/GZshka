@@ -1,0 +1,11 @@
+alph = {'1':'.,?!:','2':'abcABC', '3':'defDEF','4':'ghiGHI', '5':'jklJKL', '6':'mnoMNO', '7':'pqrsPQRS','8':'tuvTUV', '9':'wxyzWXYZ','0':' '}
+phrase = (input("Введите фразу: ")).lower()
+for s in phrase:
+    for key in alph:
+        if s in alph[key]:
+            for x in alph[key]:
+                if x == s:
+                    print(key, end='')
+                    break
+                else:
+                    print(key, end='')
