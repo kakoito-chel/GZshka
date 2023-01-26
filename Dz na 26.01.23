@@ -8,7 +8,7 @@ for a in range(0, 300):
         print(a)
         break
 
-
+#Ответ 9
 
 
 for A in range(1, 500):
@@ -20,7 +20,7 @@ for A in range(1, 500):
     if flag == 0:
         print(A)
 
-
+#Ответ 90
 
 for A in range(32):
     B = True
@@ -30,3 +30,4 @@ for A in range(32):
     if B:
         print(A)
         break
+#Ответ 2
