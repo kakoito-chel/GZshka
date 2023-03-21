@@ -9,3 +9,28 @@ for x in range(50):
                 s1 = s1.replace('03', '2012', 1)
             if s1.count('1') == 56 and s1.count('2') == 44 and s1.count('3') == 19:
                 print(len(s))
+
+for k1 in range(0,40):
+    for k2 in range(0,40):
+        for k3 in range(0,40):
+            for k4 in range(0,40):
+                s = '0'+'11'*k1+'22'*k2+'1'*k3+'2'*k4+'0'
+                if s.count('1') == s.count('2'):
+                    while not'00' in s:
+                        s = s.replace('011','20',1)
+                        s = s.replace('022','10',1)
+                        s = s.replace('01','220',1)
+                        s = s.replace('02','110',1)
+                    if s.count('1')==40 and s.count('2')>50:
+                        print(s.count('2'))
+
+
+
+
+s=input()
+while s.find("00")>=0:
+    s=s.replace(s,"011","20",1)
+    s=s.replace(s,"022","10",1)
+    s=s.replace(s,"01","220",1)
+    s=s.replace(s,"02","110",1)
+print(s)
