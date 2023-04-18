@@ -14,3 +14,41 @@ for i in range(len(a) - 1):
             s += 1
             mx = max(mx, a[i] + a[j])
 print(s, mx)
+
+f = open('24.txt').readline()
+k = 1
+m = 0
+for i in range(1, len(f)):
+    if f[i] != f[i-1]:
+        k += 1
+    else:
+        m = max(m, k)
+        k = 1
+m = max(m, k)
+print(m)
+
+f=open('24_demo.txt')
+s=f.readline()
+mx=1
+cnt=1
+for i in range(len(s)-1):
+    if s[i]=='X' and s[i+1]=='X':
+        cnt+=1
+        if cnt>mx:
+            mx=cnt
+    else:
+        cnt=1
+mx = max(cnt, mx)
+print(mx)
+
+f = open('24.txt').readline()
+k = mx = 0
+for i in range(len(f)):
+    if f[i-1:i+1] in 'XYZX' and k:
+        k += 1
+    elif f[i] == 'X':
+        k = 1
+    else:
+        k = 0
+    mx = max(mx, k)
+print(mx)
